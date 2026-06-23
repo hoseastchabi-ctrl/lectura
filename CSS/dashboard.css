@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #3a8dde;
+  --primary-light: #5ec6fa;
+  --primary-gradient: linear-gradient(135deg, #3a8dde 0%, #5ec6fa 100%);
+  --white: #fff;
+  --gray: #f7f8fa;
+  --text: #222;
+  --text-light: #666;
+  --card-shadow: 0 4px 24px rgba(58, 141, 222, 0.07);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: var(--gray);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+header {
+  background: var(--primary-gradient);
+  color: var(--white);
+  padding: 0.5rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Fredoka', cursive;
+  font-size: 1.7rem;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+
+.logo i {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.logout-icon {
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  transition: color 0.2s;
+}
+
+.logout-icon:hover {
+  color: var(--primary-light);
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-banner {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--gray);
+  box-shadow: var(--card-shadow);
+}
+
+.hero-banner img {
+  width: 100%;
+  display: block;
+  height: 270px;
+  object-fit: cover;
+}
+
+.hero-banner-text {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  padding: 0.7rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  box-shadow: 0 2px 8px rgba(58, 141, 222, 0.10);
+}
+
+.btn-ghost {
+  background: var(--white);
+  color: var(--primary);
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  box-shadow: 0 2px 8px rgba(58, 141, 222, 0.10);
+  transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-ghost:hover {
+  background: var(--primary-light);
+  color: var(--white);
+}
+
+.search-bar {
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 2rem;
+  box-shadow: var(--card-shadow);
+  padding: 0.2rem 1rem;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding: 0.8rem 0.7rem;
+  font-size: 1.05rem;
+  border-radius: 2rem;
+  outline: none;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.continue-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 2.5rem auto 0 auto;
+}
+
+.continue-title {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-family: 'Fredoka', cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  gap: 0.7rem;
+  background: var(--primary-gradient);
+  border-radius: 14px 14px 0 0;
+  padding: 1rem 1.5rem 0.7rem 1.5rem;
+}
+
+.continue-card {
+  background: var(--primary-gradient);
+  color: var(--white);
+  border-radius: 0 0 14px 14px;
+  box-shadow: var(--card-shadow);
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.continue-book-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.continue-book-author {
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
+.continue-book-desc {
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 7px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 4px;
+  margin-bottom: 0.3rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: var(--white);
+  border-radius: 4px;
+}
+
+.progress-label {
+  font-size: 0.95rem;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.categories-filter {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.categories-filter button {
+  background: var(--white);
+  color: var(--primary);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: var(--card-shadow);
+}
+
+.categories-filter button.active,
+.categories-filter button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.books-list {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.book-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.book-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.book-title {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.book-author {
+  color: var(--text-light);
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-desc {
+  color: var(--text-light);
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.btn-story {
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(58, 141, 222, 0.10);
+  transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.btn-story:hover {
+  background: var(--primary-light);
+  color: var(--white);
+}
+
+footer {
+  background: var(--primary-gradient);
+  color: var(--white);
+  padding: 3rem 0 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 180px;
+  margin-bottom: 2rem;
+}
+
+.footer-col h3 {
+  font-family: 'Fredoka', cursive;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col p, .footer-col a, .footer-col li {
+  color: var(--white);
+  font-size: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-col ul {
+  padding-left: 0;
+}
+
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-socials a {
+  color: var(--white);
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: var(--primary-light);
+}
+
+.footer-col ul li i {
+  margin-right: 0.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.98rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom a {
+  color: var(--white);
+  margin: 0 0.7rem;
+  text-decoration: underline;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 1100px) {
+  .books-list {
+    justify-content: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .books-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-banner img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-banner,
+  .continue-section,
+  .categories-filter,
+  .books-list {
+    width: 98%;
+  }
+  .hero-banner img {
+    height: 120px;
+  }
+}
